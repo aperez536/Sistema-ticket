@@ -43,8 +43,5 @@ public class Cliente extends Persona{
 		return  super.toString() + " Cliente [ idCliente=" + idCliente + ", tipoCliente=" + tipoCliente + ", porcentaje=" + porcentaje + "]";
 	}
 	
-	public boolean equals(Cliente c){
-		return idCliente == c.getIdCliente();
-	}
 
 }

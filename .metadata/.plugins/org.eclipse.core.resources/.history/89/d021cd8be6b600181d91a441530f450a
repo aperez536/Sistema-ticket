@@ -9,7 +9,7 @@ public class Evento {
 	private PrecioSector precioEvento;
 	private List<Funcion> listaFuncion;
 	
-	public Evento(int idEvento, String titulo, String tipoEvento, Auditorio auditorio, PrecioSector precioEvento) throws Exception{
+	public Evento(int idEvento, String titulo, String tipoEvento, Auditorio auditorio, PrecioSector precioEvento) {
 		super();
 		this.idEvento = idEvento;
 		this.titulo = titulo;
@@ -69,8 +69,8 @@ public class Evento {
 				+ auditorio + ", precioEvento=" + precioEvento + ", listaFuncion=" + listaFuncion + "]";
 	}
 	
-	public boolean equals(Evento e) {
-		return idEvento == e.getIdEvento();
+	public boolean equals(Evento evento) {
+		return getIdEvento() == idEvento;
 	}
 	
 }

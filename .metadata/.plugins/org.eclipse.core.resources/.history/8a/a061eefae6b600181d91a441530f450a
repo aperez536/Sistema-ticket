@@ -3,13 +3,13 @@ package modelo;
 public class Login {
 	
 	private String usuario;
-	private String password;
+	private String contraseña;
 	private Privilegio privilegio;
 	
-	public Login(String usuario, String password, Privilegio privilegio) throws Exception{
+	public Login(String usuario, String contraseña, Privilegio privilegio) throws Exception{
 		super();
 		this.usuario = usuario;
-		this.password = password;
+		this.contraseña = contraseña;
 		this.privilegio = privilegio;
 	}
 	public String getUsuario() {
@@ -19,10 +19,10 @@ public class Login {
 		this.usuario = usuario;
 	}
 	public String getContraseña() {
-		return password;
+		return contraseña;
 	}
 	public void setContraseña(String contraseña) {
-		this.password = contraseña;
+		this.contraseña = contraseña;
 	}
 	public Privilegio getPrivilegio() {
 		return privilegio;
@@ -32,7 +32,7 @@ public class Login {
 	}
 	@Override
 	public String toString() {
-		return "Login [usuario=" + usuario + ", password=" + password + ", privilegio=" + privilegio + "]";
+		return "Login [usuario=" + usuario + ", contraseña=" + contraseña + ", privilegio=" + privilegio + "]";
 	}
 	
 

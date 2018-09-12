@@ -65,8 +65,5 @@ public class Ticket {
 				+ fechaReserva + ", precioTicket=" + precioTicket + "]";
 	}
 	
-	public boolean equals(Ticket t){
-		return idTicket == t.getIdTicket();
-	}
 	
 }

@@ -12,7 +12,7 @@ public class Funcion {
 	private List<Reserva> reservas;
 	
 	public Funcion(int idFuncion, GregorianCalendar fechaInicio, GregorianCalendar fechaFin, double descuento,
-			Evento evento) throws Exception{
+			Evento evento) {
 		super();
 		this.idFuncion = idFuncion;
 		this.fechaInicio = fechaInicio;

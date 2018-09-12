@@ -64,8 +64,8 @@ public class Auditorio {
 		return "Auditorio [idAuditorio=" + idAuditorio + ", tipo=" + tipo + ", nombre=" + nombre + ", direccion="
 				+ direccion + ", listaEvento=" + listaEvento + ", sectores=" + sectores + "]";
 	}
-	public boolean equals(Auditorio a) {
-		return idAuditorio == a.getIdAuditorio();
+	public boolean equals(Auditorio auditorio) {
+		return idAuditorio == auditorio.getIdAuditorio();
 	}
   
 }

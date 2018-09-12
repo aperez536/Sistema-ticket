@@ -1,13 +1,11 @@
 package modelo;
-
 import java.util.*;
-
 public class SistemaVentaTicketUNla {
 	
 	private List<Cliente> cliente;
 	private List<Auditorio> listaAuditorio;
 	
-	public SistemaVentaTicketUNla() throws Exception{
+	public SistemaVentaTicketUNla() {
 		super();
 		this.cliente = new ArrayList<Cliente>();
 		this.listaAuditorio = new ArrayList<Auditorio>();

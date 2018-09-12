@@ -6,7 +6,7 @@ public class PrecioSector {
 	private double precioPorSector;
 	private int cantidadVendida;
 	
-	public PrecioSector(Sector sector, double precioPorSector, int cantidadVendida)throws Exception {
+	public PrecioSector(Sector sector, double precioPorSector, int cantidadVendida) {
 		super();
 		this.sector = sector;
 		this.precioPorSector = precioPorSector;

@@ -9,7 +9,8 @@ public class Auditorio {
 	private List<Evento> listaEvento;
 	private List<Sector> sectores;
 	
-	public Auditorio(int idAuditorio, String tipo, String nombre, String direccion) throws Exception{
+	public Auditorio(int idAuditorio, String tipo, String nombre, String direccion) 
+	{
 		super();
 		this.idAuditorio = idAuditorio;
 		this.tipo = tipo;
@@ -64,8 +65,8 @@ public class Auditorio {
 		return "Auditorio [idAuditorio=" + idAuditorio + ", tipo=" + tipo + ", nombre=" + nombre + ", direccion="
 				+ direccion + ", listaEvento=" + listaEvento + ", sectores=" + sectores + "]";
 	}
-	public boolean equals(Auditorio a) {
-		return idAuditorio == a.getIdAuditorio();
+	public boolean equals(Auditorio auditorio) {
+		return getIdAuditorio() == idAuditorio;
 	}
   
 }
