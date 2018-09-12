@@ -10,7 +10,7 @@ public class Ticket {
 	private GregorianCalendar fechaReserva;
 	private double precioTicket;
 
-	public Ticket(int idTicket, Sector sector, Funcion funcion, GregorianCalendar fechaReserva, double precioTicket) {
+	public Ticket(int idTicket, Sector sector, Funcion funcion, GregorianCalendar fechaReserva, double precioTicket)throws Exception {
 		super();
 		this.idTicket = idTicket;
 		this.sector = sector;

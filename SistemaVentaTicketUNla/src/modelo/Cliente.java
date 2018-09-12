@@ -7,7 +7,7 @@ public class Cliente extends Persona{
 	private double porcentaje;
 	
 	public Cliente( String nombre, String apellido, long dni, Login login,
-			int idCliente , String tipoCliente, double porcentaje)  {
+			int idCliente , String tipoCliente, double porcentaje) throws Exception {
 		super(nombre,apellido,dni,login);
 		this.idCliente = idCliente;
 		this.tipoCliente = tipoCliente;

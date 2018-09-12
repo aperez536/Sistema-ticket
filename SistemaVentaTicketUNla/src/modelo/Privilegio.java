@@ -5,7 +5,7 @@ public class Privilegio {
 	private int codigoPrivilegio;
 	private String resposabilidades;
 	
-	public Privilegio(int codigoPrivilegio, String resposabilidades) {
+	public Privilegio(int codigoPrivilegio, String resposabilidades) throws Exception{
 		super();
 		this.codigoPrivilegio = codigoPrivilegio;
 		this.resposabilidades = resposabilidades;

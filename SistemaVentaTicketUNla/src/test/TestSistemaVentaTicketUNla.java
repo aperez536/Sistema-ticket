@@ -1,6 +1,7 @@
 package test;
 
-
+import modelo.*;
+import java.util.*;
 
 public class TestSistemaVentaTicketUNla {
 

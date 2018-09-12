@@ -1,0 +1,16 @@
+package modelo;
+
+import java.util.*;
+
+public class Numerado extends Sector{
+	
+	private List<Butaca> butacas;
+
+	public Numerado(String tipo, List<Butaca> butacas) throws Exception {
+		super(tipo);
+		this.butacas = butacas;
+	}
+	
+	
+
+}

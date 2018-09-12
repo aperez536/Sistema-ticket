@@ -7,7 +7,7 @@ public class Persona {
 	protected long dni;
 	protected Login login;
 	
-	public Persona(String nombre, String apellido, long dni, Login login) {
+	public Persona(String nombre, String apellido, long dni, Login login) throws Exception{
 		super();
 		this.nombre = nombre;
 		this.apellido = apellido;
@@ -43,5 +43,8 @@ public class Persona {
 		return "Persona [nombre=" + nombre + ", apellido=" + apellido + ", dni=" + dni + ", login=" + login + "]";
 	}
 	
+	public boolean equals(Persona p){
+		return dni == p.getDni();
+	}
 
 }

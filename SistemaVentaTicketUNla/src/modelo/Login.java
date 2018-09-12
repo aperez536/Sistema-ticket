@@ -6,7 +6,7 @@ public class Login {
 	private String contraseña;
 	private Privilegio privilegio;
 	
-	public Login(String usuario, String contraseña, Privilegio privilegio) {
+	public Login(String usuario, String contraseña, Privilegio privilegio) throws Exception{
 		super();
 		this.usuario = usuario;
 		this.contraseña = contraseña;

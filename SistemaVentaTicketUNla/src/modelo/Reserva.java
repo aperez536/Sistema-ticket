@@ -9,7 +9,7 @@ public class Reserva {
 	private List<Ticket> tickets;
 	private boolean entregado;
 	
-	public Reserva(Cliente cliente, GregorianCalendar fechaHora, boolean entregado) {
+	public Reserva(Cliente cliente, GregorianCalendar fechaHora, boolean entregado) throws Exception{
 		super();
 		this.cliente = cliente;
 		this.fechaHora = fechaHora;
