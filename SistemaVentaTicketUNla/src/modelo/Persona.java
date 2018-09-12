@@ -1,10 +1,12 @@
 package modelo;
 
 public class Persona {
-	private String nombre;
-	private String apellido;
-	private long dni;
-	private Login login;
+	
+	protected String nombre;
+	protected String apellido;
+	protected long dni;
+	protected Login login;
+	
 	public Persona(String nombre, String apellido, long dni, Login login) {
 		super();
 		this.nombre = nombre;

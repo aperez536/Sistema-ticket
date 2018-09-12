@@ -1,6 +1,6 @@
 package test;
 
-//import modelo.*;
+
 
 public class TestSistemaVentaTicketUNla {
 

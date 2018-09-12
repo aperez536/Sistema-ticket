@@ -1,5 +1,7 @@
 package modelo;
+
 import java.util.*;
+
 public class Reserva {
 	
 	private Cliente cliente;
@@ -7,11 +9,11 @@ public class Reserva {
 	private List<Ticket> tickets;
 	private boolean entregado;
 	
-	public Reserva(Cliente cliente, GregorianCalendar fechaHora, List<Ticket> tickets, boolean entregado) {
+	public Reserva(Cliente cliente, GregorianCalendar fechaHora, boolean entregado) {
 		super();
 		this.cliente = cliente;
 		this.fechaHora = fechaHora;
-		this.tickets = tickets;
+		this.tickets = new ArrayList<Ticket>();
 		this.entregado = entregado;
 	}
 

@@ -1,8 +1,10 @@
 package modelo;
 
 public class Privilegio {
+	
 	private int codigoPrivilegio;
 	private String resposabilidades;
+	
 	public Privilegio(int codigoPrivilegio, String resposabilidades) {
 		super();
 		this.codigoPrivilegio = codigoPrivilegio;

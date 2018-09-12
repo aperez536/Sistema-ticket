@@ -1,6 +1,7 @@
 package modelo;
-import java.util.*;
+
 public class Cliente extends Persona{
+	
 	private int idCliente;
 	private String tipoCliente;
 	private double porcentaje;
@@ -39,7 +40,7 @@ public class Cliente extends Persona{
 
 	@Override
 	public String toString() {
-		return "Cliente [ super.tostring() idCliente=" + idCliente + ", tipoCliente=" + tipoCliente + ", porcentaje=" + porcentaje + "]";
+		return  super.toString() + " Cliente [ idCliente=" + idCliente + ", tipoCliente=" + tipoCliente + ", porcentaje=" + porcentaje + "]";
 	}
 	
 

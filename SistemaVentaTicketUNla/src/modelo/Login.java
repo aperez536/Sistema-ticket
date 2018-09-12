@@ -1,9 +1,11 @@
 package modelo;
 
 public class Login {
+	
 	private String usuario;
 	private String contraseña;
 	private Privilegio privilegio;
+	
 	public Login(String usuario, String contraseña, Privilegio privilegio) {
 		super();
 		this.usuario = usuario;
