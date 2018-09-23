@@ -6,15 +6,15 @@ public class Reserva {
 	
 	private Cliente cliente;
 	private GregorianCalendar fechaHora;
-	private List<Ticket> tickets;
 	private boolean entregado;
+	private List<Ticket> tickets;
 	
-	public Reserva(Cliente cliente, GregorianCalendar fechaHora, boolean entregado) throws Exception{
+	public Reserva(Cliente cliente, GregorianCalendar fechaHora, boolean entregado)throws Exception {
 		super();
 		this.cliente = cliente;
 		this.fechaHora = fechaHora;
-		this.tickets = new ArrayList<Ticket>();
 		this.entregado = entregado;
+		this.tickets = new ArrayList<Ticket>();
 	}
 
 	public Cliente getCliente() {
@@ -33,14 +33,6 @@ public class Reserva {
 		this.fechaHora = fechaHora;
 	}
 
-	public List<Ticket> getTickets() {
-		return tickets;
-	}
-
-	public void setTickets(List<Ticket> tickets) {
-		this.tickets = tickets;
-	}
-
 	public boolean isEntregado() {
 		return entregado;
 	}
@@ -49,10 +41,23 @@ public class Reserva {
 		this.entregado = entregado;
 	}
 
+	public List<Ticket> getTickets() {
+		return tickets;
+	}
+
 	@Override
 	public String toString() {
-		return "Reserva [cliente=" + cliente + ", fechaHora=" + fechaHora + ", tickets=" + tickets + ", entregado="
-				+ entregado + "]";
+		return "Reserva [cliente=" + cliente + ", fechaHora=" + fechaHora + ", entregado=" + entregado + ", tickets="
+				+ tickets + "]";
 	}
+	
+	
+
+	
+	
+	
+	
+	
+	
 	
 }

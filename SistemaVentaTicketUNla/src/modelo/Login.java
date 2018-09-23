@@ -12,24 +12,45 @@ public class Login {
 		this.password = password;
 		this.privilegio = privilegio;
 	}
+	
+	
+	
 	public String getUsuario() {
 		return usuario;
 	}
+
+
+
 	public void setUsuario(String usuario) {
 		this.usuario = usuario;
 	}
-	public String getContraseña() {
+
+
+
+	public String getPassword() {
 		return password;
 	}
-	public void setContraseña(String contraseña) {
-		this.password = contraseña;
+
+
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
+
+
+
 	public Privilegio getPrivilegio() {
 		return privilegio;
 	}
+
+
+
 	public void setPrivilegio(Privilegio privilegio) {
 		this.privilegio = privilegio;
 	}
+
+
+
 	@Override
 	public String toString() {
 		return "Login [usuario=" + usuario + ", password=" + password + ", privilegio=" + privilegio + "]";

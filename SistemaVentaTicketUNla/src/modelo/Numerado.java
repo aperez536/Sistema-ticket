@@ -15,10 +15,6 @@ public class Numerado extends Sector{
 		return butacas;
 	}
 
-	public void setButacas(List<Butaca> butacas) {
-		this.butacas = butacas;
-	}
-
 	@Override
 	public String toString() {
 		return super.toString() + " Numerado [butacas=" + butacas + "]";
