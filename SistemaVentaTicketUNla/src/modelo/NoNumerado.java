@@ -3,10 +3,12 @@ package modelo;
 public class NoNumerado extends Sector{
 	
 	private int espacioDisponible;
+	private int espacioTotal;
 
-	public NoNumerado(String tipo, int espacioDisponible) throws Exception {
+	public NoNumerado(String tipo, int espacioDisponible,int espacioTotal) throws Exception {
 		super(tipo);
 		this.espacioDisponible = espacioDisponible;
+		this.espacioTotal = espacioTotal;
 	}
 
 	public int getEspacioDisponible() {
@@ -17,10 +19,20 @@ public class NoNumerado extends Sector{
 		this.espacioDisponible = espacioDisponible;
 	}
 
+	public int getEspacioTotal() {
+		return espacioTotal;
+	}
+
+	public void setEspacioTotal(int espacioTotal) {
+		this.espacioTotal = espacioTotal;
+	}
+
 	@Override
 	public String toString() {
-		return super.toString() + " NoNumerado [espacioDisponible=" + espacioDisponible + "]";
+		return "NoNumerado [espacioDisponible=" + espacioDisponible + ", espacioTotal=" + espacioTotal + "]";
 	}
+
+	
 	
 	
 	

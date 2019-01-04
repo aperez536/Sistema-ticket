@@ -1,0 +1,27 @@
+package test;
+
+//import modelo.*;
+
+public class TestSistemaVentaTicketUNla2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//cargar datos de prueba
+		
+		//cliente
+		//auditorio
+		//evento
+		//funcion
+		//sector
+		//reserva
+		
+		//cliente 2
+				//auditorio
+				//evento
+				//funcion
+				//sector
+				//reserva
+	}
+
+}

@@ -5,15 +5,15 @@ public class Evento {
 	private int idEvento;
 	private String titulo;
 	private String tipoEvento;
-	private PrecioSector precioEvento;
+	private List<PrecioSector> listaPrecios;
 	private List<Funcion> listaFuncion;
 	
-	public Evento(int idEvento, String titulo, String tipoEvento, PrecioSector precioEvento)throws Exception {
+	public Evento(int idEvento, String titulo, String tipoEvento)throws Exception {
 		super();
 		this.idEvento = idEvento;
 		this.titulo = titulo;
 		this.tipoEvento = tipoEvento;
-		this.precioEvento = precioEvento;
+		this.listaPrecios = new ArrayList<PrecioSector>();
 		this.listaFuncion = new ArrayList<Funcion>();
 	}
 
@@ -41,12 +41,8 @@ public class Evento {
 		this.tipoEvento = tipoEvento;
 	}
 
-	public PrecioSector getPrecioEvento() {
-		return precioEvento;
-	}
-
-	public void setPrecioEvento(PrecioSector precioEvento) {
-		this.precioEvento = precioEvento;
+	public List<PrecioSector> getListaPrecios() {
+		return listaPrecios;
 	}
 
 	public List<Funcion> getListaFuncion() {
@@ -55,10 +51,10 @@ public class Evento {
 
 	@Override
 	public String toString() {
-		return "Evento [idEvento=" + idEvento + ", titulo=" + titulo + ", tipoEvento=" + tipoEvento + ", precioEvento="
-				+ precioEvento + ", listaFuncion=" + listaFuncion + "]";
+		return "Evento [idEvento=" + idEvento + ", titulo=" + titulo + ", tipoEvento=" + tipoEvento + ", listaPrecios="
+				+ listaPrecios + ", listaFuncion=" + listaFuncion + "]";
 	}
-	
+
 	public boolean equals(Evento e){
 		return idEvento == e.getIdEvento();
 	}
@@ -81,25 +77,20 @@ public class Evento {
 	}
 	
 	public boolean eliminarFuncion(int idFuncion)throws Exception{
-		if(traerFuncion(idFuncion) == null)throw new Exception("ERROR no se pudo eliminar la funcion");
 		Funcion f = traerFuncion(idFuncion);
+		if(f == null)throw new Exception("ERROR no se pudo eliminar la funcion");
 		return listaFuncion.remove(f);
 	}
 	
 	public boolean modificarFuncion(int idFuncion,GregorianCalendar fechaInicio,GregorianCalendar fechaFin,double descuento)throws Exception{
-		if(traerFuncion(idFuncion) == null)throw new Exception("ERROR no se pudo modificar la funcion");
-		int i = 0;
-		boolean encontrado = false;
-		while(encontrado == false && i < listaFuncion.size()){
-			if(listaFuncion.get(i).getIdFuncion() == idFuncion){
-				listaFuncion.get(i).setFechaInicio(fechaInicio);
-				listaFuncion.get(i).setFechaFin(fechaFin);
-				listaFuncion.get(i).setDescuento(descuento);
-				encontrado = true;
-			}
-			i++;
-		}
+		Funcion f = traerFuncion(idFuncion);
+		if(f == null)throw new Exception("ERROR no se pudo modificar la funcion");
+		f.setFechaInicio(fechaInicio);
+		f.setFechaFin(fechaFin);
+		f.setDescuento(descuento);
 		return true;
 	}
+	
+
 	
 }

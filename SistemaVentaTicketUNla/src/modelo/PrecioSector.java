@@ -4,15 +4,13 @@ public class PrecioSector {
 
 	private Sector sector;
 	private double precioPorSector;
-	private int cantidadVendida;
 	
-	public PrecioSector(Sector sector, double precioPorSector, int cantidadVendida)throws Exception {
+	public PrecioSector(Sector sector, double precioPorSector)throws Exception {
 		super();
 		this.sector = sector;
 		this.precioPorSector = precioPorSector;
-		this.cantidadVendida = cantidadVendida;
 	}
-
+	
 	public Sector getSector() {
 		return sector;
 	}
@@ -29,18 +27,13 @@ public class PrecioSector {
 		this.precioPorSector = precioPorSector;
 	}
 
-	public int getCantidadVendida() {
-		return cantidadVendida;
-	}
-
-	public void setCantidadVendida(int cantidadVendida) {
-		this.cantidadVendida = cantidadVendida;
-	}
-
 	@Override
 	public String toString() {
-		return "PrecioSector [sector=" + sector + ", precioPorSector=" + precioPorSector + ", cantidadVendida="
-				+ cantidadVendida + "]";
+		return "PrecioSector [sector=" + sector + ", precioPorSector=" + precioPorSector + "]";
 	}
+
+	
+
+	
 	
 }

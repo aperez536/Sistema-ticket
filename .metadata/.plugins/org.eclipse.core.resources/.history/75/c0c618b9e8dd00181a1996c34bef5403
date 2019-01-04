@@ -1,0 +1,33 @@
+package test;
+
+import modelo.*;
+
+public class TestSistemaVentaTicketUNla2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try{
+			System.out.println("Escenario 2: Excepcion carga de cliente");
+			SistemaVentaTicketUNla s = new SistemaVentaTicketUNla();
+			System.out.println("Carga de Cliente 1: " + s.agregarCliente("Oscar", "Ruina", 11111111, "Estudiante"));
+			System.out.println("Carga de Cliente 1: " + s.agregarCliente("Oscar", "Ruina", 11111111, "Estudiante"));
+	
+		}
+		catch(Exception e){
+			System.out.println(e.getMessage());
+		}
+		
+		try{
+			System.out.println("Escenario 3: Excepcion carga de auditorio");
+			SistemaVentaTicketUNla s = new SistemaVentaTicketUNla();
+			System.out.println("Carga de Auditorio 1: " + s.agregarAuditorio("Estadio", "Florencio Sola", "Gral Arenales 902"));
+			System.out.println("Carga de Auditorio 1: " + s.agregarAuditorio("Estadio", "Florencio Sola", "Gral Arenales 902"));
+	
+		}
+		catch(Exception e){
+			System.out.println(e.getMessage());
+		}
+
+	}
+
+}

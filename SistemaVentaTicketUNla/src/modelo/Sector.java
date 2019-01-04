@@ -19,7 +19,11 @@ public class Sector {
 
 	@Override
 	public String toString() {
-		return "Evento [tipo=" + tipo + "]";
+		return "Sector [tipo=" + tipo + "]";
+	}
+	
+	public boolean equals(Sector s) {
+		return this.tipo.equalsIgnoreCase(s.getTipo());
 	}
 
 }
